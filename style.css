@@ -1,3 +1,5 @@
+
+/* */
 /* General Styles */
 * {
     margin: 0;
@@ -10,14 +12,14 @@ body {
     background: #f8f9fa;
 }
 
-/* Upper Navbar */
+/* Upper Navbar */ 
 .upper-nav {
     background: #ffffff;
     padding: 10px 50px;
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid #ddd;
-    margin-top: 20px;
+    
 }
 
 .btn-container button {
@@ -48,6 +50,7 @@ body {
     background: white;
     border-bottom: 2px solid #005daa;
 }
+
 
 /*Logo Styling*/
 
@@ -483,10 +486,14 @@ body {
     transform: rotateY(0deg);
 }
 
-/* Hover Effect */
+/* Hover Effect 
+
 .partners-grid:hover .partner-card:not(:hover) {
     filter: blur(3px);
 }
+
+*/
+
 
 .partner-card:hover {
     transform: scale(1.1);
@@ -609,6 +616,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: 1200px;
+    min-width: 200px;
     margin: 0 auto;
     padding: 0 20px;
 }
