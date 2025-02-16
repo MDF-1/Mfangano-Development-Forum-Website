@@ -1,51 +1,72 @@
 const mainMenuItems = [
   {
-    title: 'About Rotary',
+    title: 'About MDF',
     submenu: [
-      { name: 'Who We Are', url: 'rotary.org' },
-      { name: 'Our Impact', url: '/our-impact' },
-      { name: 'Get Involved', url: '/get-involved' },
-      { name: 'Our Programs', url: '/our-programs' },
-      { name: 'History', url: '/history' }
+      { name: 'Overview', url: 'rotary.org' },
+      { name: 'History', url: '/our-impact' },
+      { name: 'Our Structure', url: '/get-involved' },
+      { name: 'Our Foundation', url: '/our-programs' },
+      { name: 'Our leaders', url: '/history' },
+      { name: 'Diversity, Equity and Inclusion', url: '/history' },
+      { name: 'Financials', url: '/history' },
+      { name: 'Partners', url: '/history' },
+      { name: 'Membership', url: '/history' }
     ]
   },
   {
-    title: 'Take Action',
+    title: 'Get Involved',
     submenu: [
-      { name: 'End Polio', url: '/end-polio' },
-      { name: 'Donate', url: '/donate' },
-      { name: 'Join', url: '/join' },
-      { name: 'Volunteer', url: '/volunteer' },
-      { name: 'Learn', url: '/learn' }
+      { name: 'Educational and Vocational Training', url: '/end-polio' },
+      { name: 'transport and Infastructure', url: '/donate' },
+      { name: 'Health and Sanitation', url: '/join' },
+      { name: 'Planning', url: '/join' },
+      { name: 'Finance and Enterprise Development', url: '/join' },
+      { name: 'Land Water and Environment', url: '/join' },
+      { name: 'Agriculture Livestock and Fisheries', url: '/join' },
+      { name: 'Sports Gender and Talent Development', url: '/join' },
+      { name: 'Language Heritage Culture and Tourism ', url: '/join' },
+      { name: 'Public Admin Legal Affairs and Security', url: '/join' },
+      { name: 'Media and Events Organizing', url: '/join' },
+      { name: 'Lobby and Advocacy', url: '/join' }      
     ]
   },
   {
     title: 'Our Causes',
     submenu: [
-      { name: 'Peace & Conflict Resolution', url: '/peace-conflict-resolution' },
-      { name: 'Disease Prevention', url: '/disease-prevention' },
-      { name: 'Water & Sanitation', url: '/water-sanitation' },
-      { name: 'Maternal & Child Health', url: '/maternal-child-health' },
-      { name: 'Education', url: '/education' },
-      { name: 'Community Development', url: '/community-development' }
+      { name: 'Health', url: '/peace-conflict-resolution' },
+      { name: 'Education', url: '/disease-prevention' },
+      { name: 'Agriculture', url: '/water-sanitation' },
+      { name: 'Clean Water', url: '/maternal-child-health' },
+      { name: 'Entrepreneurship', url: '/education' },
+      { name: 'Transport', url: '/community-development' },
+      { name: 'Power', url: '/history' },
+      { name: 'Fishing', url: '/history' }
     ]
   },
   {
-    title: 'News & Features',
+    title: 'Our Programs',
     submenu: [
-      { name: 'News', url: '/news' },
-      { name: 'Magazine', url: '/magazine' },
-      { name: 'Stories', url: '/stories' },
-      { name: 'Press Center', url: '/press-center' }
+      { name: 'Education Recorgnition', url: '/news' },
+      { name: 'Last Expense', url: '/magazine' },
+      { name: 'Airtime', url: '/stories' },
+      { name: 'Sacco', url: '/press-center' },
+      { name: 'Investment SPV', url: '/history' }
     ]
   },
   {
-    title: 'Member Center',
+    title: 'News and Features',
     submenu: [
-      { name: 'Member Resources', url: '/member-resources' },
-      { name: 'Learning Center', url: '/learning-center' },
-      { name: 'Club Resources', url: '/club-resources' },
-      { name: 'District Resources', url: '/district-resources' }
+      { name: 'Chairman Message', url: '/member-resources' },
+      { name: 'Media and Communication', url: '/learning-center' },
+      { name: 'Newsletter', url: '/club-resources' },
+      { name: 'Gallery', url: '/district-resources' }
+    ]
+  },
+  {
+    title: 'For Members',
+    submenu: [
+      { name: 'Register', url: '/member-resources' },
+      { name: 'Documents', url: '/learning-center' }
     ]
   }
 ];
