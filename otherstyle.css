@@ -1,0 +1,568 @@
+/* Previous styles remain unchanged up to the hero section */
+
+/* Enhanced Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('mdfhomepicture.jpg') center/cover no-repeat;
+    transform: scale(1.1);
+    animation: zoomEffect 20s infinite alternate;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mission-vision {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cta-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #0050a0;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .cta-button:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 80, 160, 0.3);
+  }
+  
+  /* Impact Counter Section */
+  .impact-counter {
+    background-color: #0050a0;
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .counter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .counter-item {
+    padding: 0.5rem;
+  }
+  
+  .counter {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .counter-item p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* Featured Story Section */
+  .featured-story {
+    padding: 5rem ;
+    background-color: #f8fafc;
+  }
+  
+  .story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .story-text {
+    padding-right: 2rem;
+  }
+  
+  .story-text h2 {
+    font-size: 2.2rem;
+    color: #0050a0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .story-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 2rem;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #0050a0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+  }
+  
+  .story-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Latest News Section */
+  .latest-news {
+    padding: 5rem ;
+    background-color: white;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .news-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card:hover .news-image img {
+    transform: scale(1.1);
+  }
+  
+  .news-content {
+    padding: 1.5rem;
+  }
+  
+  .news-date {
+    color: #718096;
+    font-size: 0.9rem;
+  }
+  
+  .news-content h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #2d3748;
+  }
+  
+  .news-content p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    color: #0050a0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Get Involved Section */
+  .get-involved {
+    padding: 5rem ;
+    background-color: #f8fafc;
+  }
+  
+  .involvement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .involvement-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .involvement-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .involvement-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebf8ff;
+    border-radius: 50%;
+    color: #0050a0;
+  }
+  
+  .involvement-card h3 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .involvement-card p {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+  }
+  
+  .action-link {
+    color: #0050a0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .action-link:hover {
+    color: #003366;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 5rem ;
+    background-color: white;
+  }
+  
+  .testimonials-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 3rem auto;
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .testimonial-card.active {
+    display: block;
+  }
+  
+  .testimonial-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a5568;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .author-info h4 {
+    color: #2d3748;
+    margin: 0;
+  }
+  
+  .author-info p {
+    color: #718096;
+    margin: 0;
+  }
+  
+  .testimonial-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .testimonial-controls button {
+    background: none;
+    border: 2px solid #0050a0;
+    color: #0050a0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial-controls button:hover {
+    background-color: #0050a0;
+    color: white;
+  }
+  
+  /* Newsletter Section */
+  .newsletter-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #0050a0 0%, #003366 100%);
+    color: white;
+  }
+  
+  .newsletter-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  /* Enhanced Footer */
+  .footer {
+    background-color: #1a202c;
+    color: white;
+    padding-top: 4rem;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-section h3 {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 50px;
+    height: 2px;
+    background-color: #0050a0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-section ul li a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-section ul li a:hover {
+    color: white;
+  }
+  
+  .social-links svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .newsletter-form,
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .newsletter-form input,
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #2d3748;
+    border-radius: 5px;
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  .newsletter-form button,
+  .contact-form button {
+    padding: 0.75rem;
+    background-color: #0050a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover,
+  .contact-form button:hover {
+    background-color: #003366;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .footer-bottom {
+    margin-top: 4rem;
+    padding: 1.5rem ;
+    text-align: center;
+    border-top: 1px solid #2d3748;
+  }
+  
+  .footer-bottom p {
+    color: #a0aec0;
+  }
+  
+  /* Animations */
+  @keyframes zoomEffect {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .hero-title {
+      font-size: 3rem;
+    }
+    
+    .mission-vision {
+      font-size: 1.25rem;
+    }
+    
+    .story-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .story-text {
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .counter {
+      font-size: 2.5rem;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .footer-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .mission-vision {
+      font-size: 1rem;
+    }
+    
+    .cta-button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+    }
+    
+    .counter-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Parallax Effects */
+  .featured-story,
+  .get-involved,
+  .testimonials {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
