@@ -2,32 +2,31 @@ const mainMenuItems = [
   {
     title: 'About MDF',
     submenu: [
-      { name: 'Overview', url: 'rotary.org' },
-      { name: 'History', url: '/our-impact' },
-      { name: 'Our Structure', url: '/get-involved' },
-      { name: 'Our Foundation', url: '/our-programs' },
-      { name: 'Our leaders', url: '/history' },
-      { name: 'Diversity, Equity and Inclusion', url: '/history' },
-      { name: 'Financials', url: '/history' },
-      { name: 'Partners', url: '/history' },
-      { name: 'Membership', url: '/history' }
+      { name: 'Overview', url: 'aboutmdf.html#overview' },
+      { name: 'History', url: 'aboutmdf.html#history' },
+      { name: 'Our Structure', url: 'aboutmdf.html#structure' },
+      { name: 'Our Foundation', url: 'aboutmdf.html#foundation' },
+      { name: 'Our Leaders', url: 'aboutmdf.html#leaders' },
+      { name: 'Diversity, Equity and Inclusion', url: 'aboutmdf.html#dei' },
+      { name: 'Financials', url: 'aboutmdf.html#financials' },
+      { name: 'Partners', url: 'aboutmdf.html#partners' },
+      { name: 'Membership', url: 'aboutmdf.html#membership' }
     ]
   },
   {
     title: 'Get Involved',
     submenu: [
-      { name: 'Educational and Vocational Training', url: '/end-polio' },
-      { name: 'transport and Infastructure', url: '/donate' },
-      { name: 'Health and Sanitation', url: '/join' },
-      { name: 'Planning', url: '/join' },
-      { name: 'Finance and Enterprise Development', url: '/join' },
-      { name: 'Land Water and Environment', url: '/join' },
-      { name: 'Agriculture Livestock and Fisheries', url: '/join' },
-      { name: 'Sports Gender and Talent Development', url: '/join' },
-      { name: 'Language Heritage Culture and Tourism ', url: '/join' },
-      { name: 'Public Admin Legal Affairs and Security', url: '/join' },
-      { name: 'Media and Events Organizing', url: '/join' },
-      { name: 'Lobby and Advocacy', url: '/join' }      
+      { name: 'Educational and Vocational Training', url: 'getinvolved.html' },
+      { name: 'Transport and Infastructure', url: 'getinvolved.html' },
+      { name: 'Health and Sanitation', url: 'getinvolved.html' },
+      { name: 'Planning, Finance and Enterprise Development', url: 'getinvolved.html' },
+      { name: 'Land Water and Environment', url: 'getinvolved.html' },
+      { name: 'Agriculture and Livestock', url: 'getinvolved.html' },
+      { name: 'Fisheries and Blue Economy', url: 'getinvolved.html' },
+      { name: 'Sports, Gender, Talent Management and Development', url: 'getinvolved.html' },
+      { name: 'Language, Culture, Heritage and Tourism ', url: 'getinvolved.html' },
+      { name: 'Public Admin Legal Affairs and Security', url: 'getinvolved.html' },
+      { name: 'AdHoc Committees', url: 'getinvolved.html' }     
     ]
   },
   {
@@ -186,3 +185,22 @@ function initMobileNav() {
     });
   });
 }
+
+function initMap() {
+  // Coordinates for the location (Change to your desired location)
+  const location = { lat: -1.286389, lng: 36.817223 }; // Example: Nairobi, Kenya
+  
+  // Initialize the map
+  const map = new google.maps.Map(document.getElementById("map"), {
+      center: location,
+      zoom: 15, // Adjust zoom level
+  });
+
+  // Add a marker
+  new google.maps.Marker({
+      position: location,
+      map: map,
+      title: "Your Location", // Tooltip on hover
+  });
+}
+
