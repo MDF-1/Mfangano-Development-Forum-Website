@@ -1,11 +1,11 @@
 const mainMenuItems = [
   {
-    title: 'About MDF',
+    title: 'About MDF', 
     submenu: [
       { name: 'Overview', url: 'aboutmdf.html#overview' },
       { name: 'History', url: 'aboutmdf.html#history' },
       { name: 'Our Structure', url: 'aboutmdf.html#structure' },
-      { name: 'Our Foundation', url: 'aboutmdf.html#foundation' },
+   
       { name: 'Our Leaders', url: 'aboutmdf.html#leaders' },
       { name: 'Diversity, Equity and Inclusion', url: 'aboutmdf.html#dei' },
       { name: 'Financials', url: 'aboutmdf.html#financials' },
@@ -46,7 +46,7 @@ const mainMenuItems = [
     title: 'Our Programs',
     submenu: [
       { name: 'Education Recorgnition', url: '/news' },
-      { name: 'Last Expense', url: '/magazine' },
+      { name: 'MDF Benovolence', url: '/magazine' },
       { name: 'Airtime', url: '/stories' },
       { name: 'Sacco', url: '/press-center' },
       { name: 'Investment SPV', url: '/history' }
@@ -100,13 +100,14 @@ function initDesktopNav() {
   });
 
   // Handle hover and click events
+  
   navItems.forEach((item) => {
     item.addEventListener('mouseenter', () => {
       openMegaMenu();
     });
 
     item.addEventListener('click', (e) => {
-      e.preventDefault();
+      
       openMegaMenu();
     });
   });
