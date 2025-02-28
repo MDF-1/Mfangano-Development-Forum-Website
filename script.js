@@ -2,11 +2,11 @@ const mainMenuItems = [
   {
     title: 'About MDF', 
     submenu: [
-      { name: 'Overview', url: '/aboutoverview.html' },
-      { name: 'History', url: '/aboutpages/abouthistory.html' },
-      { name: 'Our Structure', url: '/aboutpages/aboutstructure.html' },   
-      { name: 'Our Leaders', url: '/aboutpages/ourleaders.html' },
-      { name: 'Diversity, Equity and Inclusion', url: '/aboutpages/dei.html' },
+      { name: 'Overview', url: 'aboutoverview.html' },
+      { name: 'History', url: 'abouthistory.html' },
+      { name: 'Our Structure', url: 'aboutstructure.html' },   
+      { name: 'Our Leaders', url: 'ourleaders.html' },
+      { name: 'Diversity, Equity and Inclusion', url: 'dei.html' },
       { name: 'Financials', url: 'aboutmdf.html#financials' },
       { name: 'Partners', url: 'aboutmdf.html#partners' },
       { name: 'Membership', url: 'aboutmdf.html#membership' }
