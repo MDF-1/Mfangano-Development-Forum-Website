@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 90vw;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 50px auto;
+    padding: 200px;
+    background-color: white;
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #1E90FF; /* Blue */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .vision {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #1E90FF; /* Blue */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .core-values, .objectives {
+    padding-left: 20px;
+  }
+  
+  .core-values li, .objectives li {
+    margin-bottom: 10px;
+  }
+  
+  .core-values li::before {
+    content: "•";
+    color: #FFD700; /* Yellow */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .objectives li {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  .objectives ul {
+    list-style-type: disc;
+    margin-left: 40px;
+  }
+  
+  .status {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .members-count {
+    font-size: 1.2rem;
+    color: #1E90FF; /* Blue */
+    text-align: center;
+    padding: 10px;
+    background-color: #FFD700; /* Yellow */
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .vision {
+      font-size: 1rem;
+    }
+  
+    .status, .members-count {
+      font-size: 1rem;
+    }
+  }

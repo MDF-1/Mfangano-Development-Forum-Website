@@ -2,12 +2,11 @@ const mainMenuItems = [
   {
     title: 'About MDF', 
     submenu: [
-      { name: 'Overview', url: 'aboutmdf.html#overview' },
-      { name: 'History', url: 'aboutmdf.html#history' },
-      { name: 'Our Structure', url: 'aboutmdf.html#structure' },
-   
-      { name: 'Our Leaders', url: 'aboutmdf.html#leaders' },
-      { name: 'Diversity, Equity and Inclusion', url: 'aboutmdf.html#dei' },
+      { name: 'Overview', url: '/aboutpages/aboutoverview.html' },
+      { name: 'History', url: '/aboutpages/abouthistory.html' },
+      { name: 'Our Structure', url: '/aboutpages/aboutstructure.html' },   
+      { name: 'Our Leaders', url: '/aboutpages/ourleaders.html' },
+      { name: 'Diversity, Equity and Inclusion', url: '/aboutpages/dei.html' },
       { name: 'Financials', url: 'aboutmdf.html#financials' },
       { name: 'Partners', url: 'aboutmdf.html#partners' },
       { name: 'Membership', url: 'aboutmdf.html#membership' }
@@ -16,7 +15,7 @@ const mainMenuItems = [
   {
     title: 'Get Involved',
     submenu: [
-      { name: 'Educational and Vocational Training', url: 'getinvolved.html' },
+      { name: 'Educational and Vocational Training', url: '/getinvolved.html' },
       { name: 'Transport and Infastructure', url: 'getinvolved.html' },
       { name: 'Health and Sanitation', url: 'getinvolved.html' },
       { name: 'Planning, Finance and Enterprise Development', url: 'getinvolved.html' },
@@ -100,16 +99,12 @@ function initDesktopNav() {
   });
 
   // Handle hover and click events
-  
   navItems.forEach((item) => {
     item.addEventListener('mouseenter', () => {
       openMegaMenu();
     });
 
-    item.addEventListener('click', (e) => {
-      
-      openMegaMenu();
-    });
+ 
   });
 
   // Close mega menu when mouse leaves the navigation area
@@ -205,3 +200,35 @@ function initMap() {
   });
 }
 
+//Our leaders page Under About script
+
+// Add interactivity to the "Read More" buttons
+const readMoreButtons = document.querySelectorAll('.btn-read-more');
+
+readMoreButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const leaderCard = button.closest('.leader-card');
+    const leaderDetails = leaderCard.querySelector('.leader-details');
+
+    if (leaderDetails.style.display === 'none' || !leaderDetails.style.display) {
+      leaderDetails.style.display = 'block';
+      button.textContent = 'Read Less';
+    } else {
+      leaderDetails.style.display = 'none';
+      button.textContent = 'Read More';
+    }
+  });
+});
+
+// D>E>I Scripts 
+
+// Add interactivity (if needed)
+// Example: Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
