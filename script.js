@@ -2,7 +2,7 @@ const mainMenuItems = [
   {
     title: 'About MDF', 
     submenu: [
-      { name: 'Overview', url: '/aboutpages/aboutoverview.html' },
+      { name: 'Overview', url: 'aboutpages/aboutoverview.html' },
       { name: 'History', url: '/aboutpages/abouthistory.html' },
       { name: 'Our Structure', url: '/aboutpages/aboutstructure.html' },   
       { name: 'Our Leaders', url: '/aboutpages/ourleaders.html' },
