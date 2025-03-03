@@ -9,7 +9,7 @@ const mainMenuItems = [
       { name: 'Diversity, Equity and Inclusion', url: 'dei.html' },
       { name: 'Financials', url: 'aboutmdf.html#financials' },
       { name: 'Partners', url: 'aboutmdf.html#partners' },
-      { name: 'Membership', url: 'aboutmdf.html#membership' }
+      { name: 'Membership', url: 'membership.html' }
     ]
   },
   {
@@ -36,7 +36,7 @@ const mainMenuItems = [
       { name: 'Agriculture', url: '/water-sanitation' },
       { name: 'Clean Water', url: '/maternal-child-health' },
       { name: 'Entrepreneurship', url: '/education' },
-      { name: 'Transport', url: '/community-development' },
+      { name: 'Transport', url: 'transport.html' },
       { name: 'Power', url: '/history' },
       { name: 'Fishing', url: '/history' }
     ]
@@ -44,9 +44,9 @@ const mainMenuItems = [
   {
     title: 'Our Programs',
     submenu: [
-      { name: 'Education Recorgnition', url: '/news' },
-      { name: 'MDF Benovolence', url: '/magazine' },
-      { name: 'Airtime', url: '/stories' },
+      { name: 'Education Recognition', url: '/news' },
+      { name: 'MDF Benovolence', url: 'mdfbenovolence.html' },
+      { name: 'Airtime', url: 'mdfairtime.html' },
       { name: 'Sacco', url: '/press-center' },
       { name: 'Investment SPV', url: '/history' }
     ]
@@ -54,7 +54,7 @@ const mainMenuItems = [
   {
     title: 'News and Features',
     submenu: [
-      { name: 'Chairman Message', url: '/member-resources' },
+      { name: 'Chairman Message', url: 'chairmanmessage.html' },
       { name: 'Media and Communication', url: '/learning-center' },
       { name: 'Newsletter', url: '/club-resources' },
       { name: 'Gallery', url: '/district-resources' }
