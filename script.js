@@ -31,14 +31,15 @@ const mainMenuItems = [
   {
     title: 'Our Causes',
     submenu: [
-      { name: 'Health', url: '/peace-conflict-resolution' },
-      { name: 'Education', url: '/disease-prevention' },
+      { name: 'Health', url: 'causeshealth.html' },
+      { name: 'Education', url: 'causeseducation.html' },
       { name: 'Agriculture', url: '/water-sanitation' },
-      { name: 'Clean Water', url: '/maternal-child-health' },
-      { name: 'Entrepreneurship', url: '/education' },
+      { name: 'Environment', url: 'causesenvironment.html' },
+      { name: 'Entrepreneurship', url: 'causesentrepreneurship.html' },
       { name: 'Transport', url: 'transport.html' },
-      { name: 'Power', url: '/history' },
-      { name: 'Fishing', url: '/history' }
+      { name: 'Employment', url: 'causesemployment.html' },
+      { name: 'Power', url: 'causespower.html' },
+      { name: 'Fishing', url: 'causesfishing.html' }
     ]
   },
   {
@@ -55,7 +56,7 @@ const mainMenuItems = [
     title: 'News and Features',
     submenu: [
       { name: 'Chairman Message', url: 'chairmanmessage.html' },
-      { name: 'Media and Communication', url: '/learning-center' },
+      { name: 'Media and Communication', url: 'mediaandcommunications.html' },
       { name: 'Newsletter', url: '/club-resources' },
       { name: 'Gallery', url: '/district-resources' }
     ]

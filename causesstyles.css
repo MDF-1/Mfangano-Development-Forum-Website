@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366; /* Navy Blue */
+    background-image: url('communityhealth.jpeg'); /* Add your hero image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #003366;
+    background-color: #FFD700; /* Yellow */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e6b800; /* Darker Yellow */
+  }
+  
+  /* Info Section */
+  .info-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .info-section h2 {
+    color: #003366;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .info-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .info-content img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .info-text {
+    width: 50%;
+  }
+  
+  .info-text h3 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .info-text p {
+    color: #555;
+  }
