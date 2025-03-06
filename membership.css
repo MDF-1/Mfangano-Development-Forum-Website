@@ -37,7 +37,7 @@ body {
   }
   
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3rem; 
     margin-bottom: 20px;
   }
   
@@ -190,6 +190,43 @@ body {
     }
   
     .cta p {
+      font-size: 1rem;
+    }
+  }
+
+
+  /*status */
+  .status {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .members-count {
+    font-size: 1.2rem;
+    color: #1E90FF; /* Blue */
+    text-align: center;
+    padding: 10px;
+    background-color: #FFD700; /* Yellow */
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .vision {
+      font-size: 1rem;
+    }
+  
+    .status, .members-count {
       font-size: 1rem;
     }
   }
