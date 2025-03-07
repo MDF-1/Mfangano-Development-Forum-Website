@@ -26,9 +26,9 @@ body {
     background-image: url('agriculture.jpeg'); /* Add your image */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +43,7 @@ body {
   
   .hero-content p {
     font-size: 1.7rem;
+    color: #f4f4f4;
   }
   
   /* About Section */

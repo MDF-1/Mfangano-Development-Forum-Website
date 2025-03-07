@@ -124,3 +124,22 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
   }
+
+
+  /*Register For Sacco Btn styles*/
+  .register-f0r-sacco{
+    height: 50px;
+    width: 15vw;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    margin-top: 100px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .register-f0r-sacco:hover {
+    background-color: #FFD700;
+    color: black;
+    transform: scale(1.2);
+    cursor: pointer;
+  }

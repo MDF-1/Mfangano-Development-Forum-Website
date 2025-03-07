@@ -127,21 +127,24 @@ body {
     font-size: 1.2rem;
     margin-bottom: 30px;
   }
-  
+
+   
   .btn-join {
-    background-color: #FFD700; /* Yellow */
-    color: #000;
+    background-color: darkblue; /* Yellow */
+    color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transition 0.3s ease;
+    text-decoration: none;
   }
   
   .btn-join:hover {
-    background-color: #FFA500; /* Darker Yellow */
+    background-color: orange; /* Darker Yellow */
+    color: black;
   }
   
   /* Responsive Design */
@@ -203,7 +206,7 @@ body {
   }
   
   .members-count {
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     color: #1E90FF; /* Blue */
     text-align: center;
     padding: 10px;
