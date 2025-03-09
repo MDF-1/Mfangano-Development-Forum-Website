@@ -48,8 +48,8 @@ const mainMenuItems = [
       { name: 'Education Recognition', url: '/news' },
       { name: 'MDF Benovolence', url: 'mdfbenovolence.html' },
       { name: 'Airtime', url: 'mdfairtime.html' },
-      { name: 'Sacco', url: '/press-center' },
-      { name: 'Investment SPV', url: '/history' }
+      { name: 'Sacco', url: 'mdfsacco.html' },
+      { name: 'Investment SPV', url: 'mdfinvestmentspv.html' }
     ]
   },
   {

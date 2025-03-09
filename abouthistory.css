@@ -71,3 +71,30 @@ body {
       padding: 10px;
     }
   }
+
+
+  .about-history-hero {
+    background: url('siambi1.jpg') center/cover no-repeat;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.about-history-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-history-hero p {
+    font-size: 1.5rem;
+}
+
+.container img{
+  width: 50%;
+
+}
