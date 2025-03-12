@@ -15,17 +15,17 @@ const mainMenuItems = [
   {
     title: 'Get Involved',
     submenu: [
-      { name: 'Educational and Vocational Training', url: '/getinvolved.html' },
-      { name: 'Transport and Infastructure', url: 'getinvolved.html' },
-      { name: 'Health and Sanitation', url: 'getinvolved.html' },
-      { name: 'Planning, Finance and Enterprise Development', url: 'getinvolved.html' },
-      { name: 'Land Water and Environment', url: 'getinvolved.html' },
-      { name: 'Agriculture and Livestock', url: 'getinvolved.html' },
-      { name: 'Fisheries and Blue Economy', url: 'getinvolved.html' },
-      { name: 'Sports, Gender, Talent Management and Development', url: 'getinvolved.html' },
-      { name: 'Language, Culture, Heritage and Tourism ', url: 'getinvolved.html' },
-      { name: 'Public Admin Legal Affairs and Security', url: 'getinvolved.html' },
-      { name: 'AdHoc Committees', url: 'getinvolved.html' }     
+      { name: 'Educational and Vocational Training', url: 'getinvolvededvoctraining.html' },
+      { name: 'Transport and Infastructure', url: 'getinvolvedtransportinfa.html' },
+      { name: 'Health and Sanitation', url: 'getinvolvedhealth.html' },
+      { name: 'Planning, Finance and Enterprise Development', url: 'getinvolvedfinance.html' },
+      { name: 'Land Water and Environment', url: 'getinvolvedlandwater.html' },
+      { name: 'Agriculture and Livestock', url: 'getinvolvedagriclivestock.html' },
+      { name: 'Fisheries and Blue Economy', url: 'getinvolvedfisheries.html' },
+      { name: 'Sports, Gender, Talent Management and Development', url: 'getinvolvedsports.html' },
+      { name: 'Language, Culture, Heritage and Tourism ', url: 'getinvolvedlanguageculture.html' },
+      { name: 'Public Admin Legal Affairs and Security', url: 'getinvolvedpublicadmin.html' },
+      { name: 'AdHoc Committees', url: 'getinvolvedadhoc.html' }     
     ]
   },
   {
