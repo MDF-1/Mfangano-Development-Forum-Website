@@ -17,7 +17,7 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: #003366; /* Navy Blue */
-    background-image: url('https://via.placeholder.com/1200x600'); /* Add your hero image */
+    background-image: url('mdfagm9.JPG'); /* Add your hero image */
     background-size: cover;
     background-position: center;
   }
@@ -82,7 +82,7 @@ body {
   
   .news-item img, .story-item img, .event-item img {
     width: 100%;
-    height: 200px;
+    
     object-fit: cover;
   }
   
@@ -155,7 +155,7 @@ body {
   
   .gallery-grid img {
     width: 100%;
-    height: 150px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
   }

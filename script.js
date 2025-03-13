@@ -58,7 +58,7 @@ const mainMenuItems = [
       { name: 'Chairman Message', url: 'chairmanmessage.html' },
       { name: 'Media and Communication', url: 'mediaandcommunications.html' },
       { name: 'Newsletter', url: '/club-resources' },
-      { name: 'Gallery', url: '/district-resources' }
+      { name: 'Gallery', url: 'mdfgallery.html' }
     ]
   },
   {

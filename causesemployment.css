@@ -17,8 +17,8 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: #003366; /* Navy Blue */
-    background-image: url('employment-hero.jpg'); /* Add your hero image */
-    background-size: cover;
+    background-image: url('mdfabout.jpg'); /* Add your hero image */
+    background-size: contain;
     background-position: center;
   }
   
