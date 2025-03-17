@@ -632,3 +632,37 @@ body {
 .footer-bottom p {
   color: #a0aec0;
 }
+
+
+
+/* Back to Top Button Styles */
+#back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom */
+  right: 20px; /* Place the button at the right */
+  z-index: 99; /* Make sure it's on top of other elements */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Button background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Padding */
+  border-radius: 25%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#back-to-top:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+    /* Responsive Adjustments for Mobile Devices */
+    @media (max-width: 768px) {
+      #back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
