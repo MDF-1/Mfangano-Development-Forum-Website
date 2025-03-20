@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Documents</title>
+  <link rel="stylesheet" href="vault.css">
+</head>
+<body>
+  <header>
+    <h1>Executive Documents</h1>
+    <div>
+      
+      <button id="logout-btn">Log Out</button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Toggle -->
+  <button id="mobile-menu-toggle">☰ Menu</button>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h2>Exec Documents</h2>
+      <ul id="exec-document-list">
+        <li data-file="exec-document1.pdf">Exec Document 1</li>
+        <li data-file="exec-document2.pdf">Exec Document 2</li>
+        <li data-file="exec-document3.pdf">Exec Document 3</li>
+      </ul>
+
+
+      <button id="back-to-vault">Back to Vault</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <div id="exec-document-viewer">
+        <p>Select an executive document from the sidebar to view it.</p>
+      </div>
+      <!-- Download Button (Hidden by Default) -->
+      <a id="exec-download-btn" class="download-btn" style="display: none;">Download PDF</a>
+    </main>
+  </div>
+
+  <script src="vault.js"></script>
+</body>
+</html>

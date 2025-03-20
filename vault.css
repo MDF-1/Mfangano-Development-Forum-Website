@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for contrast */
+  }
+  
+  header {
+    background-color: #001f3f; /* Navy blue header */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  #logout-btn {
+    background-color: #ffd700; /* Yellow button */
+    color: #333; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #logout-btn:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+  }
+  
+  /* Mobile Menu Toggle */
+  #mobile-menu-toggle {
+    display: none; /* Hidden by default */
+    background-color: #001f3f; /* Navy blue */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    background-color: #f0f8ff; /* Light blue sidebar */
+    padding: 20px;
+    height: calc(100vh - 80px); /* Full height minus header */
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+    color: #001f3f; /* Navy blue heading */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd; /* Light gray border */
+    color: #333; /* Dark text */
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #ffd700; /* Yellow background on hover */
+    color: #333; /* Dark text */
+  }
+  
+  #exec-docs-btn {
+    background-color: #001f3f; /* Navy blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  #exec-docs-btn:hover {
+    background-color: #003366; /* Darker navy blue on hover */
+  }
+  
+  /* Main Content Styles */
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  #document-viewer {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Download Button Styles */
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #001f3f; /* Navy blue button */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .download-btn:hover {
+    background-color: #003366; /* Darker navy blue on hover */
+  }
+  
+  /* Pop-up Styles */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Blurred background */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-content h2 {
+    margin-top: 0;
+    color: #001f3f; /* Navy blue heading */
+  }
+  
+  .popup-content input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .popup-content button {
+    background-color: #001f3f; /* Navy blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-content button:hover {
+    background-color: #003366; /* Darker navy blue on hover */
+  }
+  
+  .error-msg {
+    color: #ff0000; /* Red error message */
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #mobile-menu-toggle {
+      display: block; /* Show mobile menu toggle */
+    }
+  
+    .sidebar {
+      display: none; /* Hide sidebar by default on mobile */
+      width: 100%;
+      height: auto;
+    }
+  
+    .sidebar.active {
+      display: block; /* Show sidebar when active */
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  /* Back to Vault Button */
+#back-to-vault {
+    background-color: #ffd700; /* Yellow button */
+    color: #333; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px; /* Space between buttons */
+  }
+  
+  #back-to-vault:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+  }

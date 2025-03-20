@@ -39,6 +39,7 @@ body {
   .hero-content h1 {
     font-size: 3rem; 
     margin-bottom: 20px;
+    color: #1E90FF;
   }
   
   .hero-content p {
@@ -233,3 +234,4 @@ body {
       font-size: 1rem;
     }
   }
+  

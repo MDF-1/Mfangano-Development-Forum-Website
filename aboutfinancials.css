@@ -1,0 +1,58 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark gray text for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    color: #1a73e8; /* Blue */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #fbbc05; /* Yellow */
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-weight: bold;
+    color: #1a73e8; /* Blue */
+}
+
+/* Section Styling */
+.financial-structure,
+.financial-reports,
+.point-of-emphasis {
+    background-color: #f5f5f5; /* Light gray background for sections */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1a73e8; /* Blue accent border */
+}
+
+/* Highlight Key Points */
+.point-of-emphasis {
+    background-color: #fff3cd; /* Light yellow background for emphasis */
+    border-left-color: #fbbc05; /* Yellow accent border */
+}

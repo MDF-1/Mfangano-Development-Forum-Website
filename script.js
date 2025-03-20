@@ -7,7 +7,7 @@ const mainMenuItems = [
       { name: 'Our Structure', url: 'aboutstructure.html' },   
       { name: 'Our Leaders', url: 'ourleaders.html' },
       { name: 'Diversity, Equity and Inclusion', url: 'dei.html' },
-      { name: 'Financials', url: 'aboutmdf.html#financials' },
+      { name: 'Financials', url: 'aboutfinancials.html' },
       { name: 'Partners', url: 'aboutmdf.html#partners' },
       { name: 'Membership', url: 'membership.html' }
     ]
@@ -57,15 +57,15 @@ const mainMenuItems = [
     submenu: [
       { name: 'Chairman Message', url: 'chairmanmessage.html' },
       { name: 'Media and Communication', url: 'mediaandcommunications.html' },
-      { name: 'Newsletter', url: '/club-resources' },
+      { name: 'Newsletter', url: 'newsletter.html' },
       { name: 'Gallery', url: 'mdfgallery.html' }
     ]
   },
   {
     title: 'For Members',
     submenu: [
-      { name: 'Register', url: '/member-resources' },
-      { name: 'Documents', url: '/learning-center' }
+      { name: 'Register', url: 'userloginform.html' },
+      { name: 'Documents', url: 'vault.html' }
     ]
   }
 ];
@@ -251,3 +251,27 @@ backToTopButton.addEventListener("click", function() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 });
+
+
+
+//to be removed!!!!!!!!!
+async function setBodyStyles() {
+  await setElementStyles($0, {
+    display: 'flex !important',
+    flexDirection: 'column !important',
+    justifyContent: 'center !important',
+    alignItems: 'center !important',
+    height: '100vh !important',
+    boxSizing: 'border-box !important'
+  });
+}
+setBodyStyles();
+const bodyStyles = window.getComputedStyle($0);
+const data = {
+  bodyDisplay: bodyStyles.display,
+  bodyFlexDirection: bodyStyles.flexDirection,
+  bodyJustifyContent: bodyStyles.justifyContent,
+  bodyAlignItems: bodyStyles.alignItems,
+  bodyHeight: bodyStyles.height,
+  bodyBoxSizing: bodyStyles.boxSizing
+};

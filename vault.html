@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents Vault</title>
+  <link rel="stylesheet" href="vault.css">
+</head>
+<body>
+  <header>
+    <h1>Documents Vault</h1>
+    <button id="logout-btn">Log Out</button>
+  </header>
+
+  <!-- Mobile Menu Toggle -->
+  <button id="mobile-menu-toggle">☰ Menu</button>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h2>Documents</h2>
+      <ul id="document-list">
+        <li data-file="document1.pdf">Document 1</li>
+        <li data-file="document2.pdf">Document 2</li>
+        <li data-file="document3.pdf">Document 3</li>
+      </ul>
+      <button id="exec-docs-btn">View Exec Documents</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <div id="document-viewer">
+        <p>Select a document from the sidebar to view it.</p>
+      </div>
+      <!-- Download Button (Hidden by Default) -->
+      <a id="download-btn" class="download-btn" style="display: none;">Download PDF</a>
+    </main>
+  </div>
+
+  <!-- Pop-up for Exec Documents Login -->
+  <div id="exec-login-popup" class="popup">
+    <div class="popup-content">
+      <h2>Exec Documents Login</h2>
+      <p>Enter the code to access executive documents:</p>
+      <input type="text" id="exec-code" placeholder="Enter code">
+      <button id="submit-code">Submit</button>
+      <p id="error-msg" class="error-msg"></p>
+    </div>
+  </div>
+
+  <script src="vault.js"></script>
+</body>
+</html>

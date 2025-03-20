@@ -1,0 +1,101 @@
+/* Slide-In Overlay */
+.mdf-slide-in-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .mdf-slide-in-overlay.active {
+    display: flex;
+  }
+  
+  /* Slide-In Form */
+  .mdf-slide-in-form {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen by default */
+    width: 400px; /* Default width for larger screens */
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1001;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content is too long */
+  }
+  
+  .mdf-slide-in-overlay.active .mdf-slide-in-form {
+    right: 0; /* Slide into view */
+  }
+  
+  /* Close Button */
+  .mdf-close-slide-in {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #003366; /* Navy Blue */
+    cursor: pointer;
+  }
+  
+  .mdf-close-slide-in:hover {
+    color: #FFD700; /* Yellow */
+  }
+  
+  /* Form Styles */
+  .mdf-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .mdf-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #003366; /* Navy Blue */
+  }
+  
+  .mdf-form-group input,
+  .mdf-form-group select,
+  .mdf-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .mdf-form-group textarea {
+    resize: vertical;
+  }
+  
+  .mdf-submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366; /* Navy Blue */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .mdf-submit-btn:hover {
+    background-color: #FFD700; /* Yellow */
+    color: #003366; /* Navy Blue */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mdf-slide-in-form {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }

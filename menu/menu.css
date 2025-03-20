@@ -1,0 +1,248 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Main Navigation */
+.main-nav {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+}
+
+.nav-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: none;
+  width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 max(1rem, 2vw);
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  color: #4b5563;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+  flex: 1;
+  text-align: center;
+}
+
+.nav-item:hover {
+  color: #0050a0;
+}
+
+/* Mega Menu */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2000;
+  transition: all 0.2s;
+  pointer-events: none;
+  width: 100%;
+}
+
+.mega-menu.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mega-menu-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem max(1rem, 2vw);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mega-menu-section {
+  flex: 1;
+  padding: 0 1rem;
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #e5e7eb;
+}
+
+.mega-menu-section:last-child {
+  border-right: none;
+}
+
+.mega-menu-links {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-menu-link {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+  padding: 0.5rem 0;
+  display: block;
+  word-wrap: break-word;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.mega-menu-link:hover {
+  color: #0050a0;
+}
+
+/* Mobile Navigation */
+.mobile-menu-button {
+  display: block;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  background-color: white;
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2001;
+}
+
+.mobile-nav.active {
+  display: block;
+}
+
+.mobile-nav-item {
+  padding: 0.75rem;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #4b5563;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-submenu {
+  display: none;
+  padding-left: 1rem;
+}
+
+.mobile-nav-submenu.active {
+  display: block;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .nav-items {
+    padding: 0 max(0.5rem, 1vw);
+  }
+
+  .mega-menu-content {
+    padding: 1.5rem max(0.5rem, 1vw);
+  }
+}
+
+@media (max-width: 1024px) {
+  .mega-menu-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .mega-menu-section {
+    width: 100%;
+    padding: 1rem 0;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .mega-menu-section:last-child {
+    border-bottom: none;
+  }
+
+  .mega-menu-links {
+    text-align: left;
+  }
+
+  .mega-menu-link {
+    text-align: left;
+  }
+}

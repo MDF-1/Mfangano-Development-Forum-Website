@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="otherstyle.css">
     <link rel="stylesheet" href="getinvolved.css">
+    <link rel="stylesheet" href="saccomodal.css">
+    <link rel="stylesheet" href="mdfsacco.css">
   </head>
   <body>
     <header class="header">
@@ -15,8 +17,8 @@
         <div class="logo"><a href="index.html"><img src="mdflogo1.jpg" alt="MDF"></a></div>
         <div class="upper-nav-right">
           <div class="btn-container">
-            <button class="join-btn">JOIN</button>
-            <button class="donate-btn">Donate</button>
+            <a href="membership.html#register-details"> <button class="join-btn">JOIN</button></a>
+            <a href="index.html#get-involved"><button class="donate-btn">Donate</button></a>
           </div>
         </div>
       </div>
@@ -174,7 +176,7 @@
             </div>
             <h3>Donate</h3>
             <p>Support our initiatives through financial contributions.</p>
-            <a href="#" class="action-link">Donate Now →</a>
+            <button class="register-f0r-sacco">Donate Now →</button>
           </div>
           <div class="involvement-card">
             <div class="involvement-icon">
@@ -250,9 +252,9 @@
         <div class="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutmdf.html">About</a></li>
+            <li><a href="getinvolved.html">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -297,11 +299,29 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2023 Mfangano Development Forum. A CBO REGISTERED ON 30/8/2021</p>
+        <p>&copy; 2025 Mfangano Development Forum. A CBO REGISTERED ON 30/8/2021</p>
       </div>
     </footer>
+
+     <!-- Popup Structure -->
+     <div class="popup-overlay">
+      <div class="popup-content">
+        <img src="mpesalogo1.png" alt="Payment Processor Logo">
+        <h2>Mpesa Payment Details</h2>
+        <p>Thanks for Donating to Take Part in Making Mfangano Great!</p>
+        <p>SEND PAYMENT TO:</p>
+        <p>PAYBILL NO: 400200</p>
+        <p>ACCOUNT NO: 01134332167500</p>
+        
+        <button id="close-popup-button">Close Payment Info</button>
+      </div>
+    </div>
+    
+    <!-- Notification -->
+    <div class="notification">Blessings Patriot! Thanks for the Donation!</div>
     <button id="back-to-top" title="Go to top">🔝</button>
     <script src="script.js"></script>
     <script src="otherscript.js"></script>
+    <script src="saccomodal.js"></script>
   </body>
 </html>

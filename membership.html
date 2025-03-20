@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="ourleaders.css">
     <link rel="stylesheet" href="membership.css">
     <link rel="stylesheet" href="saccomodal.css">
+    <link rel="stylesheet" href="memberslist.css">
   </head>
   <body>
     <header class="header">
@@ -20,8 +21,8 @@
         <div class="logo"><a href="index.html"><img src="mdflogo1.jpg" alt="MDF"></a></div>
         <div class="upper-nav-right">
           <div class="btn-container">
-            <button class="join-btn">JOIN</button>
-            <button class="donate-btn">Donate</button>
+            <a href="membership.html#register-details"> <button class="join-btn">JOIN</button></a>
+            <a href="index.html#get-involved"><button class="donate-btn">Donate</button></a>
           </div>
         </div> 
       </div>
@@ -102,7 +103,7 @@
 
   <!-- Call-to-Action Section -->
   <section class="cta">
-    <div class="container9">
+    <div id="register-details" class="container9">
       
       <p>
         There is nothing more important at MDF than individual and collective action in driving positive change,
@@ -114,127 +115,23 @@
         </div>
         <button class="register-f0r-sacco">JOIN MDF AS A MEMBER</button>
   </section>
+  
 
-
-  <div class="stats-container">
-    <h3>Members List (2021 - 2025)</h3>
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Year Joined</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- 2021 Members -->
-          <tr>
-            <td>1</td>
-            <td>Ken</td>
-            <td>Agwaro</td>
-            <td>2021</td>
-            <td class="status"></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Boaz</td>
-            <td>Nundu</td>
-            <td>2021</td>
-            <td class="status"></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Bernard</td>
-            <td>Odhiambo</td>
-            <td>2021</td>
-            <td class="status"></td>
-          </tr>
-          <!-- Add more rows here -->
-          <!-- Example with status -->
-          <tr>
-            <td>16</td>
-            <td>Caleb</td>
-            <td>Ginarah</td>
-            <td>2021</td>
-            <td class="status deceased">Deceased</td>
-          </tr>
-          <tr>
-            <td>53</td>
-            <td>George</td>
-            <td>Abongo Masinga</td>
-            <td>2021</td>
-            <td class="status withdrawn">Withdrawn</td>
-          </tr>
-          <!-- 2022 Members -->
-          <tr>
-            <td>233</td>
-            <td>Samwel</td>
-            <td>Bojwang</td>
-            <td>2022</td>
-            <td class="status"></td>
-          </tr>
-          <tr>
-            <td>234</td>
-            <td>Collins</td>
-            <td>Makemo</td>
-            <td>2022</td>
-            <td class="status"></td>
-          </tr>
-          <!-- Add more rows here -->
-          <!-- 2023 Members -->
-          <tr>
-            <td>308</td>
-            <td>Michael</td>
-            <td>Omogi Osodo</td>
-            <td>2023</td>
-            <td class="status"></td>
-          </tr>
-          <tr>
-            <td>309</td>
-            <td>Dr. Jane</td>
-            <td>Anyasa Okomo Otado</td>
-            <td>2023</td>
-            <td class="status"></td>
-          </tr>
-          <!-- Add more rows here -->
-          <!-- 2024 Members -->
-          <tr>
-            <td>339</td>
-            <td>Benard</td>
-            <td>Ooko Rakoro</td>
-            <td>2024</td>
-            <td class="status"></td>
-          </tr>
-          <tr>
-            <td>340</td>
-            <td>Nicholas</td>
-            <td>Otieno Olambo</td>
-            <td>2024</td>
-            <td class="status"></td>
-          </tr>
-          <!-- Add more rows here -->
-          <!-- 2025 Members -->
-          <tr>
-            <td>373</td>
-            <td>Emmanuel</td>
-            <td>Wanyende</td>
-            <td>2025</td>
-            <td class="status"></td>
-          </tr>
-          <tr>
-            <td>374</td>
-            <td>Calvin</td>
-            <td>Ongili</td>
-            <td>2025</td>
-            <td class="status"></td>
-          </tr>
-          <!-- Add more rows here -->
-        </tbody>
-      </table>
-    </div>
+  <div class="container">
+    <h1>Members Registration List</h1>
+    <input type="text" id="searchInput" placeholder="Search by name..." oninput="filterMembers()">
+    <table id="membersTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="membersList">
+        <!-- Members will be dynamically added here -->
+      </tbody>
+    </table>
   </div>
   
 
@@ -256,9 +153,9 @@
         <div class="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutmdf.html">About</a></li>
+            <li><a href="getinvolved.html">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -304,7 +201,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2023 Mfangano Development Forum. A CBO REGISTERED ON 30/8/2021</p>
+        <p>&copy; 2025 Mfangano Development Forum. A CBO REGISTERED ON 30/8/2021</p>
       </div>
     </footer>
 
@@ -334,10 +231,12 @@
 </div>
 
 <!-- Notification -->
-<div class="notification">Just In Case You have Paid. Kindly reach out as</div>
+<div class="notification">Just In Case You have Paid. Kindly register in the  database too, click on register in Member Centre on menu</div>
 <button id="back-to-top" title="Go to top">🔝</button>
     <script src="script.js"></script>
     <script src="otherscript.js"></script>
     <script src="saccomodal.js"></script>
+    <script src="memberlist.js"></script>
+
   </body>
 </html>

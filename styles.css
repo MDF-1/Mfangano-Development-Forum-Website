@@ -167,6 +167,17 @@ body {
   width: 1px;
   background-color: #e5e7eb;
 }
+.mega-menu {
+  pointer-events: none; /* Disable clicks on the mega menu */
+}
+
+.mega-menu.active {
+  pointer-events: auto; /* Enable clicks when active */
+}
+
+.mega-menu-section {
+  pointer-events: auto; /* Ensure sections are clickable */
+}
 
 .mega-menu.active .mega-menu-section {
   opacity: 1;
@@ -236,6 +247,13 @@ body {
 .mobile-nav-submenu.active {
   display: block;
 }
+.nav-item a {
+  display: block; /* Ensure the link takes up the full space */
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
 
 .mobile-nav-link {
   display: block;
@@ -243,6 +261,63 @@ body {
   color: #4b5563;
   text-decoration: none;
   font-size: 0.875rem;
+}
+/* Main Navigation */
+.nav-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  color: #4b5563;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.nav-item:hover {
+  color: #0050a0;
+}
+
+/* Ensure links inside .nav-item are clickable */
+.nav-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Mega Menu */
+.mega-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2000;
+  transition: all 0.2s;
+  pointer-events: none; /* Disable clicks when hidden */
+}
+
+.mega-menu.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; /* Enable clicks when visible */
+}
+
+.mega-menu-section {
+  pointer-events: auto; /* Ensure sections are clickable */
 }
 
 /* Desktop Styles */

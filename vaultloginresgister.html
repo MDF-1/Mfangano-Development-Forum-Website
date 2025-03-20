@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="userloginstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="loginForm">
+            <h2>Login</h2>
+            <form>
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="toggleForm()">Register</a><a href="index.html" >Home</a></p>
+            </form>
+        </div>
+        
+        <div class="form-container hidden" id="registerForm">
+            <h2>Register</h2>
+            <form>
+                <div class="input-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="Enter your first name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Enter your last name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" placeholder="Enter your phone number" required>
+                </div>
+                
+                <div class="password-container">
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required onkeyup="checkPasswordStrength()">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                    </div>
+                </div>
+                
+                <p id="passwordInstructions">Use at least 8 characters, including an uppercase letter, a lowercase letter, a number, and a special character.</p>
+                <progress id="passwordStrength" value="0" max="100"></progress>
+                
+                <p id="passwordError" class="hidden">Passwords do not match!</p>
+                
+                <button type="submit" onclick="return validatePasswords()">Register</button>
+                <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a> <a href="index.html" >Home</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            document.getElementById('loginForm').classList.toggle('hidden');
+            document.getElementById('registerForm').classList.toggle('hidden');
+        }
+
+        function validatePasswords() {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let errorText = document.getElementById("passwordError");
+            
+            if (password !== confirmPassword) {
+                errorText.classList.remove("hidden");
+                return false;
+            } else {
+                errorText.classList.add("hidden");
+                return true;
+            }
+        }
+
+        function checkPasswordStrength() {
+            let password = document.getElementById("password").value;
+            let strengthBar = document.getElementById("passwordStrength");
+            let strength = 0;
+            
+            if (password.length >= 8) strength += 25;
+            if (/[A-Z]/.test(password)) strength += 25;
+            if (/[a-z]/.test(password)) strength += 25;
+            if (/[0-9]/.test(password)) strength += 12.5;
+            if (/[^A-Za-z0-9]/.test(password)) strength += 12.5;
+            
+            strengthBar.value = strength;
+        }
+    </script>
+</body>
+</html>
