@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="getinvolved.css">
     <link rel="stylesheet" href="saccomodal.css">
     <link rel="stylesheet" href="mdfsacco.css">
+    <link rel="stylesheet" href="slideinform.css">
   </head>
   <body>
     <header class="header">
@@ -102,8 +103,8 @@
                        reduce the impact of communicable diseases to include 
                        improve awareness non communicable diseases; and support
                         sustainable infrastructure development.</p>
-                <a href="#" class="cta-button">SEND MAIL</a>
-                <a href="#" class="cta-button">View TOR</a>
+                <a href="#" class="mdf-open-slide-in">SEND MAIL</a>
+                <a href="vault.html" class="cta-button">View TOR</a>
             </div>
                 
            
@@ -167,7 +168,7 @@
             </div>
             <h3>Volunteer</h3>
             <p>Join our community of dedicated volunteers making a difference.</p>
-            <a href="#" class="action-link">Learn More →</a>
+            <a href="#" class="mdf-open-slide-in">Learn More →</a>
           </div>
           <div class="involvement-card">
             <div class="involvement-icon">
@@ -183,7 +184,7 @@
             </div>
             <h3>Partner</h3>
             <p>Collaborate with us to create lasting impact.</p>
-            <a href="#" class="action-link">Partner With Us →</a>
+            <a href="#" class="mdf-open-slide-in">Partner With Us →</a>
           </div>
         </div>
       </div>
@@ -302,6 +303,52 @@
       </div>
     </footer>
 
+
+<!-- Slide-In Form -->
+<div class="mdf-slide-in-overlay" id="mdf-slide-in-overlay">
+  <div class="mdf-slide-in-form" id="mdf-slide-in-form">
+    <button class="mdf-close-slide-in">&times;</button>
+    <h2>Contact Sub-committee</h2>
+    <form id="mdf-contact-form">
+      <div class="mdf-form-group">
+        <label for="mdf-email">Email</label>
+        <input type="email" id="mdf-email" name="email" required>
+      </div>
+      <div class="mdf-form-group">
+        <label for="mdf-sub-committee">Sub-committee</label>
+        <select id="mdf-sub-committee" name="sub-committee" required>
+          <option value="">Select a sub-committee</option>
+        <option value="Finance">Educational and Vocational Training</option>
+        <option value="Events">Transport and Infastructure</option>
+        <option value="Outreach">Health and Sanitation</option>
+        <option value="Technology">Planning, Finance and Entreprise Development</option>
+        <option value="Outreach">Agriculture and Livestock </option>
+        <option value="Outreach">Land, Water and Environment </option>
+        <option value="Outreach">Fisheries and Blue Economy</option>
+        <option value="Outreach">Sports, Gender, Talent Management and Development</option>
+        <option value="Outreach">Language, Culture, Heritage and Tourism</option>
+        <option value="Outreach">Public, Administration Legal Affairs & Security</option>
+        </select>
+      </div>
+      <div class="mdf-form-group">
+        <label for="mdf-phone">Phone Number</label>
+        <input type="tel" id="mdf-phone" name="phone" required>
+      </div>
+      <div class="mdf-form-group">
+        <label for="mdf-message">Message</label>
+        <textarea id="mdf-message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="mdf-submit-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
 <!-- Popup Structure -->
 <div class="popup-overlay">
   <div class="popup-content">
@@ -324,5 +371,6 @@
     <script src="script.js"></script>
     <script src="otherscript.js"></script>
     <script src="saccomodal.js"></script>
+    <script src="slideinform.js"></script
   </body>
 </html>

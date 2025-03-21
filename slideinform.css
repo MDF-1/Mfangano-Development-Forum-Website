@@ -99,3 +99,21 @@
       width: 100%; /* Full width on smaller screens */
     }
   }
+
+
+
+  .opportunity-card a{
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #005daa; /* Blue button */
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .opportunity-card a:hover {
+    background-color: orange;
+    }
