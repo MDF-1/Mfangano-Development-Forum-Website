@@ -46,7 +46,7 @@ const mainMenuItems = [
     title: 'Our Programs',
     submenu: [
       { name: 'Education Recognition', url: '/news' },
-      { name: 'MDF Benovolence', url: 'mdfbenovolence.html' },
+      { name: 'MDF Benevolence', url: 'mdfbenovolence.html' },
       { name: 'Airtime', url: 'mdfairtime.html' },
       { name: 'Sacco', url: 'mdfsacco.html' },
       { name: 'Investment SPV', url: 'mdfinvestmentspv.html' }
@@ -64,7 +64,7 @@ const mainMenuItems = [
   {
     title: 'For Members',
     submenu: [
-      { name: 'Register', url: 'userloginform.html' },
+      { name: 'Register', url: 'userloginform.html#' },
       { name: 'Documents', url: 'vault.html' }
     ]
   }
@@ -82,7 +82,7 @@ function initDesktopNav() {
   const megaMenu = document.querySelector('.mega-menu');
   const megaMenuContent = document.querySelector('.mega-menu-content');
 
-  // Create all menu sections upfront and align them with nav items
+  // Create all menu sections upfront
   mainMenuItems.forEach((item, index) => {
     const section = document.createElement('div');
     section.className = 'mega-menu-section';
@@ -99,25 +99,44 @@ function initDesktopNav() {
     megaMenuContent.appendChild(section);
   });
 
-  // Handle hover and click events
+  // Handle hover events for navItems
+  let hoverTimeout;
+
   navItems.forEach((item) => {
     item.addEventListener('mouseenter', () => {
+      clearTimeout(hoverTimeout); // Clear any existing timeout
       openMegaMenu();
     });
 
- 
+    item.addEventListener('mouseleave', (e) => {
+      // Check if mouse moved to mega menu
+      const toElement = e.relatedTarget;
+      if (!megaMenu.contains(toElement)) {
+        // If not, set a delay before closing the mega menu
+        hoverTimeout = setTimeout(() => {
+          closeMegaMenu();
+        }, 300); // 300ms delay
+      }
+    });
+
+    // Allow navigation for main nav items, even if they have submenus
+    item.addEventListener('click', (e) => {
+      // Navigate to the href of the navItem
+      window.location.href = item.href;
+    });
   });
 
-  // Close mega menu when mouse leaves the navigation area
+  // Handle mega menu hover
+  megaMenu.addEventListener('mouseenter', () => {
+    clearTimeout(hoverTimeout); // Clear any existing timeout
+    openMegaMenu();
+  });
+
   megaMenu.addEventListener('mouseleave', () => {
-    closeMegaMenu();
-  });
-
-  // Close mega menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-item') && !e.target.closest('.mega-menu')) {
+    // Set a delay before closing the mega menu
+    hoverTimeout = setTimeout(() => {
       closeMegaMenu();
-    }
+    }, 300); // 300ms delay
   });
 
   function openMegaMenu() {
@@ -201,7 +220,7 @@ function initMap() {
   });
 }
 
-//Our leaders page Under About script
+// Our leaders page Under About script
 
 // Add interactivity to the "Read More" buttons
 const readMoreButtons = document.querySelectorAll('.btn-read-more');
@@ -251,27 +270,3 @@ backToTopButton.addEventListener("click", function() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 });
-
-
-
-//to be removed!!!!!!!!!
-async function setBodyStyles() {
-  await setElementStyles($0, {
-    display: 'flex !important',
-    flexDirection: 'column !important',
-    justifyContent: 'center !important',
-    alignItems: 'center !important',
-    height: '100vh !important',
-    boxSizing: 'border-box !important'
-  });
-}
-setBodyStyles();
-const bodyStyles = window.getComputedStyle($0);
-const data = {
-  bodyDisplay: bodyStyles.display,
-  bodyFlexDirection: bodyStyles.flexDirection,
-  bodyJustifyContent: bodyStyles.justifyContent,
-  bodyAlignItems: bodyStyles.alignItems,
-  bodyHeight: bodyStyles.height,
-  bodyBoxSizing: bodyStyles.boxSizing
-};

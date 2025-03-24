@@ -27,38 +27,57 @@
       <!-- Main Navigation -->
       <nav class="main-nav">
         <div class="nav-content">
-          <!-- Desktop Navigation -->
-          <div class="desktop-nav">
-            <div class="nav-items">
-
-              <button class="nav-item" data-index="0">
-                About MDF
-                <a href="aboutmdf.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                </a>
-                
-              </button>
-              <button class="nav-item" data-index="1">
-                Get Involved
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              </button>
-              <button class="nav-item" data-index="2">
-                Our Causes
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              </button>
-              <button class="nav-item" data-index="3">
-                Our Programs
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              </button>
-              <button class="nav-item" data-index="3">
-                News & Features
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              </button>
-              <button class="nav-item" data-index="4">
-                Member Center
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              </button>
-            </div>
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+              <div class="nav-items">
+                  <!-- About Mdf -->
+                  <a href="aboutoverview.html" class="nav-item" data-index="0">
+                      About Mdf
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m6 9 6 6 6-6"/>
+                      </svg>
+                  </a>
+  
+                  <!-- Get Involved -->
+                  <a href="get-involved.html" class="nav-item" data-index="1">
+                      Get Involved
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m6 9 6 6 6-6"/>
+                      </svg>
+                  </a>
+  
+                  <!-- Our Causes -->
+                  <a href="our-causes.html" class="nav-item" data-index="2">
+                      Our Causes
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m6 9 6 6 6-6"/>
+                      </svg>
+                  </a>
+  
+                  <!-- Our Programs -->
+                  <a href="our-programs.html" class="nav-item" data-index="3">
+                      Our Programs
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m6 9 6 6 6-6"/>
+                      </svg>
+                  </a>
+  
+                  <!-- News & Features -->
+                  <a href="news-features.html" class="nav-item" data-index="4">
+                      News & Features
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m6 9 6 6 6-6"/>
+                      </svg>
+                  </a>
+  
+                  <!-- Member Center -->
+                  <a href="member-center.html" class="nav-item" data-index="5">
+                      Member Center
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m6 9 6 6 6-6"/>
+                      </svg>
+                  </a>
+              </div>
           </div>
 
           <!-- Mobile menu button -->
@@ -309,8 +328,12 @@
     <h2>Contact Sub-committee</h2>
     <form id="mdf-contact-form">
       <div class="mdf-form-group">
-        <label for="mdf-email">Email</label>
+        <label for="mdf-email">ENter Your Email</label>
         <input type="email" id="mdf-email" name="email" required>
+      </div>
+      <div class="mdf-form-group">
+        <label for="mdf-phone">Phone Number</label>
+        <input type="tel" id="mdf-phone" name="phone" required>
       </div>
       <div class="mdf-form-group">
         <label for="mdf-sub-committee">Sub-committee</label>
@@ -328,10 +351,7 @@
           <option value="Outreach">Public, Administration Legal Affairs & Security</option>
         </select>
       </div>
-      <div class="mdf-form-group">
-        <label for="mdf-phone">Phone Number</label>
-        <input type="tel" id="mdf-phone" name="phone" required>
-      </div>
+    
       <div class="mdf-form-group">
         <label for="mdf-message">Message</label>
         <textarea id="mdf-message" name="message" rows="5" required></textarea>
@@ -352,9 +372,9 @@
 <div class="popup-overlay">
   <div class="popup-content">
     <img src="mpesalogo1.png" alt="Payment Processor Logo">
-    <h2>Mpesa Payment Details</h2>
+    <h2>Mpesa Donation Details</h2>
     <p>Thanks for Donating to Take Part in Making Mfangano Great!</p>
-    <p>SEND PAYMENT TO:</p>
+    <p>SEND DONATION TO:</p>
     <p>PAYBILL NO: 400200</p>
     <p>ACCOUNT NO: 01134332167500</p>
     

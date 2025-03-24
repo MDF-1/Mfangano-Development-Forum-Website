@@ -104,9 +104,6 @@ body {
   padding: 0 1rem;
   position: relative;
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   border-right: 1px solid #e5e7eb;
 }
 
@@ -117,8 +114,7 @@ body {
 .mega-menu-links {
   width: 100%;
   text-align: left;
-  display: flex;
-  flex-direction: column;
+  display: block; /* Change to block to stack links vertically */
 }
 
 .mega-menu-link {
@@ -127,10 +123,10 @@ body {
   font-size: 0.875rem;
   transition: color 0.2s;
   padding: 0.5rem 0;
-  display: block;
+  display: block; /* Ensure links take full width */
   word-wrap: break-word;
   line-height: 1.4;
-  text-align: left;
+  text-align: left; /* Ensure text is horizontal */
 }
 
 .mega-menu-link:hover {

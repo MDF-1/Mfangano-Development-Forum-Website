@@ -16,14 +16,15 @@ body {
 
 /* Heading Styling */
 h1 {
-    color: #1a73e8; /* Blue */
+    color: white; /* Blue */
     font-size: 2.5rem;
     text-align: center;
+    background-color: #1a73e8;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #fbbc05; /* Yellow */
+ /* Yellow */
     font-size: 1.8rem;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -37,7 +38,7 @@ p {
 
 .intro {
     font-weight: bold;
-    color: #1a73e8; /* Blue */
+     /* Blue */
 }
 
 /* Section Styling */

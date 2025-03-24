@@ -37,7 +37,7 @@ function displayDocument(file, viewer, btn) {
   iframe.height = '500px';
   viewer.appendChild(iframe);
 
-  // Update the download button
+  // Update the download button 
   btn.href = `documents/${file}`;
   btn.download = file;
   btn.style.display = 'inline-block'; // Show the download button
