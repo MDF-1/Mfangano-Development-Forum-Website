@@ -33,7 +33,7 @@ const mainMenuItems = [
     submenu: [
       { name: 'Health', url: 'causeshealth.html' },
       { name: 'Education', url: 'causeseducation.html' },
-      { name: 'Agriculture', url: '/water-sanitation' },
+      { name: 'Agriculture', url: 'index.html' },
       { name: 'Environment', url: 'causesenvironment.html' },
       { name: 'Entrepreneurship', url: 'causesentrepreneurship.html' },
       { name: 'Transport', url: 'transport.html' },
@@ -45,7 +45,7 @@ const mainMenuItems = [
   {
     title: 'Our Programs',
     submenu: [
-      { name: 'Education Recognition', url: '/news' },
+      { name: 'Education Recognition', url: 'index.html' },
       { name: 'MDF Benevolence', url: 'mdfbenovolence.html' },
       { name: 'Airtime', url: 'mdfairtime.html' },
       { name: 'Sacco', url: 'mdfsacco.html' },
@@ -64,7 +64,7 @@ const mainMenuItems = [
   {
     title: 'For Members',
     submenu: [
-      { name: 'Register', url: 'userloginform.html#' },
+      { name: 'Register', url: 'vaultloginresgister.php' },
       { name: 'Documents', url: 'vault.html' }
     ]
   }
